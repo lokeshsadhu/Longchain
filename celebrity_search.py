@@ -37,14 +37,14 @@ chain=LLMChain(llm=llm,prompt=first_input_prompt,verbose=True,output_key="person
 
 second_input_prompt=PromptTemplate(
     input_variables=['person'],
-    template="Which place {person} was born"
+    template="What is the city {person} is living in, just give the city name thats it no extra info needed"
 )
 
 chain_2=LLMChain(llm=llm,prompt=second_input_prompt,verbose=True,output_key="place",memory=place_memory)
 
 third_input_prompt=PromptTemplate(
     input_variables=['place'],
-    template="In which state {place} was present"
+    template="What is the name of the state in which this {place} is located, just give the state name thats it no extra info needed "
 )
 
 chain_3=LLMChain(llm=llm,prompt=third_input_prompt,verbose=True,output_key="state",memory=state_memory)

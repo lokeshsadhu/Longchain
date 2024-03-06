@@ -1,0 +1,11 @@
+prefix=/home/agile/Desktop/Open AI/API/Longchain/myenv
+exec_prefix=/home/agile/Desktop/Open AI/API/Longchain/myenv
+libdir=/home/agile/Desktop/Open AI/API/Longchain/myenv/lib
+includedir=/home/agile/Desktop/Open AI/API/Longchain/myenv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

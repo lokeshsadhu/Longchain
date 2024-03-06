@@ -1,0 +1,13 @@
+prefix=/home/agile/Desktop/Open AI/API/Longchain/myenv
+exec_prefix=/home/agile/Desktop/Open AI/API/Longchain/myenv
+libdir=/home/agile/Desktop/Open AI/API/Longchain/myenv/lib
+sharedlibdir=/home/agile/Desktop/Open AI/API/Longchain/myenv/lib
+includedir=/home/agile/Desktop/Open AI/API/Longchain/myenv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
